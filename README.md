@@ -1,2 +1,2 @@
-# GerardoT-pub
+# gerardot-pub
 Gerardo Public Repo for CIT82
