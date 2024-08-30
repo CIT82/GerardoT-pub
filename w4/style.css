@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #daecf4; /* Sky blue background */
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+img {
+   height: 150px;
+}
+.outline {
+    border: 1px black solid;
+}
+header {
+    background-color: rgb(85, 141, 255);
+    color: rgb(255, 255, 255);
+    padding: 10px 0px;
+    border: 10px rgb(14, 13, 13) solid;
+    }
+li {
+    padding: 10px 0px;
+    border: 2px black dashed
+}
+img {
+    border: 10px black solid;
+}
