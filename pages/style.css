@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: rgb(85, 141, 255);
+    color: rgb(255, 255, 255);
+    padding: 10px 0px;
+    /* border: 10px red dashed; */
+    }
+main {
+    margin: 15px;
+    padding: 15px;
+    background-color: rgb(198, 158, 158);
+}
+
+footer {
+    background-color: rgb(39, 171, 171);
+    color: white;
+    padding: 10px 0;
+ }
+ 
+ label{
+    display: block;
+ }
+
+ .outline {
+    border: 1px black solid;
+}
