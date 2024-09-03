@@ -30,3 +30,6 @@ footer {
  .outline {
     border: 1px black solid;
 }
+a {
+    color: rgb(56, 61, 66);
+}
