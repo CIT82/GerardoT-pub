@@ -747,7 +747,7 @@ section,
 }
 
 .slider .swiper-slide {
-  min-height: 500px;
+  min-height: 800px;
   position: relative;
   display: flex;
   align-items: flex-end;
