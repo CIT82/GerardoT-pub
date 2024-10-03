@@ -1,34 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donation Page</title>
-    <link rel="stylesheet" href="assets/css/donate.css">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>CarBlog</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/donate.css"> <!-- Make sure this file exists -->
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
 </head>
-<body>
-    <div class="container">
-        <header>
-            <h1>Support Our website</h1>
-            <p>Your generosity helps us continue improving our website.</p>
-        </header>
-        <main>
-            <form action="#" method="post" class="donation-form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="amount">Donation Amount ($):</label>
-                <input type="number" id="amount" name="amount" min="1" required>
-                
-                <button type="submit">Donate Now</button>
-            </form>
-        </main>
-        <footer>
-            <p>Thank you for your support!</p>
-        </footer>
+
+<body class="starter-page-page">
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container position-relative d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <h1 class="sitename">CarBlog</h1>
+      </a>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="Postoftheday.html">Post of the day</a></li>
+          <li class="dropdown"><a href="category.html"><span>Categories</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="Lexus.html">Lexus</a></li>
+              </li>
+              <li><a href="Toyota.html">Toyota</a></li>
+              <li><a href="Honda.html">Honda</a></li>
+              <li><a href="Dodge.html">Dodge</a></li>
+              <li><a href="Nissan.html">Nissan</a></li>
+              <li><a href="Acura.html">Acura</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+      
+      
     </div>
+  </header>
+
+  <main class="main">
+    <section id="donation-section" class="donation-section section">
+      <div class="container" data-aos="fade-up">
+        <header>
+          <h1>Support Our Website</h1>
+          <p>Your generosity helps us continue improving our website.</p>
+        </header>
+        <form action="submit_donation.php" method="post" class="donation-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          
+          <label for="amount">Donation Amount ($):</label>
+          <input type="number" id="amount" name="amount" min="1" required>
+          
+          <button type="submit">Donate Now</button>
+        </form>
+        <footer>
+          <p>Thank you for your support!</p>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <!-- About Section -->
+        <div class="col-lg-4 col-md-6 footer-about">
+          <h1 class="sitename">CarBlog</h1>
+          <p><strong>Address:</strong> Fresno street, Fresno, CA 93704</p>
+          <p><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
+          <p><strong>Email:</strong> <span>CarBlog@gmail.com</span></p>
+        </div> <!-- End About Section -->
+
+        <!-- Useful Links Section -->
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="TOS.html">Terms of Service</a></li>
+          </ul>
+        </div> <!-- End Useful Links Section -->
+
+        <!-- Donations Section -->
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Donations</h4>
+          <ul>
+            <li><a href="donate.html">Support Us</a></li>
+          </ul>
+        </div> <!-- End Donations Section -->
+
+        <!-- Feedback Section -->
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Feedback</h4>
+          <ul>
+            <li><a href="opinion.html">Feedback</a></li>
+          </ul>
+        </div> <!-- End Feedback Section -->
+      </div>
+      
+      <div class="copyright">
+        <p>© <span>Copyright</span> <strong>CarBlog</strong> <span>All Rights Reserved</span></p>
+        <p><a href="sitemap.html" style="color: rgb(16, 164, 167);">Sitemap</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
+  
+  
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
+
