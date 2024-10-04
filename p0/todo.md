@@ -14,3 +14,8 @@
 13. Change the headers in the body. 
 14. Update and change the categories. 
 15. Add or delete things to the navigation bar. 
+16. Add TOS page
+17. Add donation page 
+18. Update the about and useful links section
+19. Update the favicon icon. 
+20. Update contact page 
