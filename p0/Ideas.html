@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Your Ideas | CarBlog</title>
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header id="header" class="header d-flex align-items-center sticky-top">
+        <div class="container position-relative d-flex align-items-center justify-content-between">
+            <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+                <h1 class="sitename">CarBlog</h1>
+            </a>
+            <nav id="navmenu" class="navmenu">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="Postoftheday.html">Post of the day</a></li>
+                <li class="dropdown"><a href="category.html"><span>Categories</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                  <ul>
+                    <li><a href="Lexus.html">Lexus</a></li>
+                    </li>
+                    <li><a href="Toyota.html">Toyota</a></li>
+                    <li><a href="Honda.html">Honda</a></li>
+                    <li><a href="Dodge.html">Dodge</a></li>
+                    <li><a href="Nissan.html">Nissan</a></li>
+                    <li><a href="Acura.html">Acura</a></li>
+                  </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+              <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Content -->
+    <main class="main">
+        <!-- Page Title -->
+        <div class="page-title position-relative">
+            <div class="container d-lg-flex justify-content-between align-items-center">
+                <h1 class="mb-2 mb-lg-0">Submit Your Content Ideas or Car Suggestions</h1>
+                <nav class="breadcrumbs">
+                    <ol>
+                        <li><a href="index.html">Home</a></li>
+                        <li class="current">Submit an Idea</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Form Section -->
+        <section class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2">
+                        <div class="form-container">
+                            <h2>We'd Love to Hear from You!</h2>
+                            <p>Have an idea for a car to review or a topic you want us to discuss? Let us know by filling out the form below, and we'll consider it for our next post!</p>
+                            
+                            <!-- Contact Form -->
+                            <form action="https://formspree.io/f/mqkdybow" method="POST">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Your Name</label>
+                                    <input type="text" class="form-control" id="name" name="name" required>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Your Email</label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="car" class="form-label">Car Model or Topic Suggestion</label>
+                                    <input type="text" class="form-control" id="car" name="car" placeholder="e.g., Lexus RX 2023 or Electric Cars" required>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Your Idea</label>
+                                    <textarea class="form-control" id="message" name="message" rows="5" placeholder="Tell us your idea!" required></textarea>
+                                </div>
+
+                                <div class="mb-3">
+                                    <button type="submit" class="btn btn-primary">Submit Suggestion</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" class="footer dark-background">
+        <div class="container footer-top">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6 footer-about">
+                    <a href="index.html" class="logo d-flex align-items-center">
+                        <h1 class="sitename">CarBlog</h1>
+                    </a>
+                    <div class="footer-contact pt-3">
+                        <p><strong>Address:</strong> Fresno street, Fresno, CA 93704</p>
+                        <p><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
+                        <p><strong>Email:</strong> <span>CarBlog@gmail.com</span></p>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="TOS.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Donations</h4>
+                    <ul>
+                        <li><a href="donate.html">Support Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
+
