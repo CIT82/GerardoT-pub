@@ -25,17 +25,13 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
 </head>
 
 <body class="index-page">
 
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container position-relative d-flex align-items-center justify-content-between">
-
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
         <h1 class="sitename">CarBlog</h1>
       </a>
 
@@ -47,7 +43,6 @@
           <li class="dropdown"><a href="category.html"><span>Categories</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="Lexus.html">Lexus</a></li>
-              </li>
               <li><a href="Toyota.html">Toyota</a></li>
               <li><a href="Honda.html">Honda</a></li>
               <li><a href="Dodge.html">Dodge</a></li>
@@ -59,209 +54,176 @@
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-
     </div>
   </header>
 
   <main class="main">
 
-<!-- Slider Section -->
-<section id="slider" class="slider section dark-background">
-
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-    <div class="swiper init-swiper">
-
-      <script type="application/json" class="swiper-config">
-        {
-          "loop": true,
-          "speed": 600,
-          "autoplay": {
-            "delay": 5000
-          },
-          "slidesPerView": "auto",
-          "centeredSlides": true,
-          "pagination": {
-            "el": ".swiper-pagination",
-            "type": "bullets",
-            "clickable": true
-          },
-          "navigation": {
-            "nextEl": ".swiper-button-next",
-            "prevEl": ".swiper-button-prev"
-          }
-        }
-      </script>
-
-      <div class="swiper-wrapper">
-
-        <div class="swiper-slide" style="background-image: url('assets/img/LexusLFA.jpg');">
-          <div class="content">
-            <h2><a href="lexus.html">Lexus</a></h2>
-          </div>
-        </div>
-
-        <div class="swiper-slide" style="background-image: url('assets/img/ToyotaGR.jpg.webp');">
-          <div class="content">
-            <h2><a href="Toyota.html">Toyota</a></h2>
-          
-          </div>
-        </div>
-
-        <div class="swiper-slide" style="background-image: url('assets/img/CivicTypeR.jpg');">
-          <div class="content">
-            <h2><a href="Honda.html">Honda</a></h2>
-            
-          </div>
-        </div>
-
-        <div class="swiper-slide" style="background-image: url('assets/img/DodgeDemon.jpg');">
-          <div class="content">
-            <h2><a href="Dodge.html">Dodge</a></h2>
-
-          </div>
-        </div>
-
-        <div class="swiper-slide" style="background-image: url('assets/img/NissanGTR.jpg');">
-          <div class="content">
-            <h2><a href="Nissan.html">Nissan</a></h2>
-
-          </div>
-        </div>
-
-        <div class="swiper-slide" style="background-image: url('assets/img/AcuraNSX.jpeg');">
-          <div class="content">
-            <h2><a href="Acura.html">Acura</a></h2>
-
-          </div>
-        </div>
-
+    <!-- Introduction Section -->
+    <section id="introduction" class="introduction section" style="background-image: url('assets/img/car-background.jpg'); background-size: cover; background-position: center;">
+      <div class="overlay"></div> <!-- Dark overlay for contrast -->
+      <div class="container text-center text-light py-5" data-aos="fade-up" data-aos-delay="100">
+        <h2 class="display-4">Welcome to CarBlog!</h2>
+        <p class="lead">Your ultimate destination for everything automotive! Whether you're a car enthusiast, a seasoned driver, or simply someone who loves to keep up with the latest in the automotive world, CarBlog has something for everyone.</p>
+        <p>From in-depth reviews of top brands like Lexus, Toyota, Honda, and more, to the latest news about upcoming models and electric vehicle innovations, we bring you timely and insightful content. Stay tuned for expert opinions, exciting features, and trending stories. Explore the world of cars with us and fuel your passion for everything on four wheels!</p>
       </div>
+    </section>
+    
 
-      <!-- Pagination and Navigation -->
-      <div class="swiper-pagination"></div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-    </div>
-  </div>
+    <!-- Slider Section -->
+    <section id="slider" class="slider section dark-background">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "centeredSlides": true,
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "navigation": {
+                "nextEl": ".swiper-button-next",
+                "prevEl": ".swiper-button-prev"
+              }
+            }
+          </script>
 
-
-    </section><!-- /Slider Section -->
-
- <!-- Trending Category Section -->
-<section id="trending-category" class="trending-category section">
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-    <div class="row g-5">
-
-      <!-- Post Entries Column 1 -->
-      <div class="col-lg-4">
-        <div class="post-entry">
-          <a href="blog-details.html"><img src="assets/img/Toyota-logo.png" alt="Toyota" class="img-fluid"></a>
-          <div class="post-meta"><span class="date">Toyota</span> <span class="mx-1">•</span> <span>Oct 5th '24</span></div>
-          <h2><a href="Toyota.html">News about Toyota</a></h2>
-        </div>
-        <div class="post-entry">
-          <a href="lexus.html"><img src="assets/img/lexus-logo-svg.jpg" alt="Lexus" class="img-fluid"></a>
-          <div class="post-meta"><span class="date">Lexus</span> <span class="mx-1">•</span> <span>Oct 17th '24</span></div>
-          <h2><a href="lexus.html">News about Lexus</a></h2>
-        </div>
-        <div class="post-entry">
-          <a href="Acura.html"><img src="assets/img/AcuraLogo.jpg" alt="Acura" class="img-fluid"></a>
-          <div class="post-meta"><span class="date">Acura</span> <span class="mx-1">•</span> <span>Sep 15th '24</span></div>
-          <h2><a href="Acura.html">News about Acura</a></h2>
-        </div>
-      </div> <!-- End Column 1 -->
-
-      <!-- Post Entries Column 2 -->
-      <div class="col-lg-4">
-        <div class="post-entry">
-          <a href="Nissan.html"><img src="assets/img/NissanLogo.jpg" alt="Nissan" class="img-fluid"></a>
-          <div class="post-meta"><span class="date">Nissan</span> <span class="mx-1">•</span> <span>Jul 5th '24</span></div>
-          <h2><a href="Nissan.html">News about Nissan</a></h2>
-        </div>
-        <div class="post-entry">
-          <a href="Dodge.html"><img src="assets/img/Dodge-Logo.png" alt="Dodge" class="img-fluid"></a>
-          <div class="post-meta"><span class="date">Dodge</span> <span class="mx-1">•</span> <span>Mar 1st '24</span></div>
-          <h2><a href="Dodge.html">News about Dodge</a></h2>
-        </div>
-        <div class="post-entry">
-          <a href="Honda.html"><img src="assets/img/HondaLogo.jpg.webp" alt="Honda" class="img-fluid"></a>
-          <div class="post-meta"><span class="date">Honda</span> <span class="mx-1">•</span> <span>Jun 5th '24</span></div>
-          <h2><a href="Honda.html">News about Honda</a></h2>
-        </div>
-      </div> <!-- End Column 2 -->
-
-<!-- Trending Section -->
-<div class="col-lg-4">
-  <div class="trending">
-    <h3>Trending</h3>
-    <ul class="trending-post">
-      <li>
-        <a href="Postoftheday.html">
-          <span class="number">1</span>
-          <h3>Dodge going electric!</h3>
-          <span class="author">Post of the day</span>
-        </a>
-      </li>
-      <li>
-        <a href="Toyota.html">
-          <span class="number">2</span>
-          <h3>Toyota New 2025 Camry!</h3>
-          <span class="author">News about Toyota</span>
-        </a>
-      </li>
-      <li>
-        <a href="Acura.html">
-          <span class="number">3</span>
-          <h3>Acura's new 2025 Integra!</h3>
-          <span class="author">News about Acura</span>
-        </a>
-      </li>
-      <li>
-        <a href="Honda.html">
-          <span class="number">4</span>
-          <h3>Honda upcoming 2026 Prelude! Here's everything we know!</h3>
-          <span class="author">News about Honda</span>
-        </a>
-      </li>
-    </ul>
-  </div>
-</div>
-
-        </div>
-      </div> <!-- End Trending Section -->
-
-    </div> <!-- End Row -->
-  </div> <!-- End Container -->
-</section> <!-- End Trending Category Section -->
-
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image: url('assets/img/LexusLFA.jpg');">
+              <div class="content">
+                <h2><a href="lexus.html">Lexus</a></h2>
               </div>
             </div>
-
-          </div> <!-- End .row -->
-        </div>
-
-      </div>
-
-    </section><!-- /Trending Category Section -->
-
-
+            <div class="swiper-slide" style="background-image: url('assets/img/ToyotaGR.jpg.webp');">
+              <div class="content">
+                <h2><a href="Toyota.html">Toyota</a></h2>
+              </div>
+            </div>
+            <div class="swiper-slide" style="background-image: url('assets/img/CivicTypeR.jpg');">
+              <div class="content">
+                <h2><a href="Honda.html">Honda</a></h2>
+              </div>
+            </div>
+            <div class="swiper-slide" style="background-image: url('assets/img/DodgeDemon.jpg');">
+              <div class="content">
+                <h2><a href="Dodge.html">Dodge</a></h2>
+              </div>
+            </div>
+            <div class="swiper-slide" style="background-image: url('assets/img/NissanGTR.jpg');">
+              <div class="content">
+                <h2><a href="Nissan.html">Nissan</a></h2>
+              </div>
+            </div>
+            <div class="swiper-slide" style="background-image: url('assets/img/AcuraNSX.jpeg');">
+              <div class="content">
+                <h2><a href="Acura.html">Acura</a></h2>
               </div>
             </div>
           </div>
 
+          <!-- Pagination and Navigation -->
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
         </div>
-
       </div>
+    </section>
 
-    </section><!-- /Lifestyle Category Section -->
+    <!-- Trending Category Section -->
+    <section id="trending-category" class="trending-category section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row g-5">
+
+          <!-- Post Entries Column 1 -->
+          <div class="col-lg-4">
+            <div class="post-entry">
+              <a href="blog-details.html"><img src="assets/img/Toyota-logo.png" alt="Toyota" class="img-fluid"></a>
+              <div class="post-meta"><span class="date">Toyota</span> <span class="mx-1">•</span> <span>Oct 5th '24</span></div>
+              <h2><a href="Toyota.html">News about Toyota</a></h2>
+            </div>
+            <div class="post-entry">
+              <a href="lexus.html"><img src="assets/img/lexus-logo-svg.jpg" alt="Lexus" class="img-fluid"></a>
+              <div class="post-meta"><span class="date">Lexus</span> <span class="mx-1">•</span> <span>Oct 17th '24</span></div>
+              <h2><a href="lexus.html">News about Lexus</a></h2>
+            </div>
+            <div class="post-entry">
+              <a href="Acura.html"><img src="assets/img/AcuraLogo.jpg" alt="Acura" class="img-fluid"></a>
+              <div class="post-meta"><span class="date">Acura</span> <span class="mx-1">•</span> <span>Sep 15th '24</span></div>
+              <h2><a href="Acura.html">News about Acura</a></h2>
+            </div>
+          </div> <!-- End Column 1 -->
+
+          <!-- Post Entries Column 2 -->
+          <div class="col-lg-4">
+            <div class="post-entry">
+              <a href="Nissan.html"><img src="assets/img/NissanLogo.jpg" alt="Nissan" class="img-fluid"></a>
+              <div class="post-meta"><span class="date">Nissan</span> <span class="mx-1">•</span> <span>Jul 5th '24</span></div>
+              <h2><a href="Nissan.html">News about Nissan</a></h2>
+            </div>
+            <div class="post-entry">
+              <a href="Dodge.html"><img src="assets/img/Dodge-Logo.png" alt="Dodge" class="img-fluid"></a>
+              <div class="post-meta"><span class="date">Dodge</span> <span class="mx-1">•</span> <span>Mar 1st '24</span></div>
+              <h2><a href="Dodge.html">News about Dodge</a></h2>
+            </div>
+            <div class="post-entry">
+              <a href="Honda.html"><img src="assets/img/HondaLogo.jpg.webp" alt="Honda" class="img-fluid"></a>
+              <div class="post-meta"><span class="date">Honda</span> <span class="mx-1">•</span> <span>Jun 5th '24</span></div>
+              <h2><a href="Honda.html">News about Honda</a></h2>
+            </div>
+          </div> <!-- End Column 2 -->
+
+          <!-- Trending Section -->
+          <div class="col-lg-4">
+            <div class="trending">
+              <h3>Trending</h3>
+              <ul class="trending-post">
+                <li>
+                  <a href="Postoftheday.html">
+                    <span class="number">1</span>
+                    <h3>Dodge going electric!</h3>
+                    <span class="author">Post of the day</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="Toyota.html">
+                    <span class="number">2</span>
+                    <h3>Toyota New 2025 Camry!</h3>
+                    <span class="author">News about Toyota</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="Acura.html">
+                    <span class="number">3</span>
+                    <h3>Acura's new 2025 Integra!</h3>
+                    <span class="author">News about Acura</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="Honda.html">
+                    <span class="number">4</span>
+                    <h3>Honda upcoming 2026 Prelude! Here's everything we know!</h3>
+                    <span class="author">News about Honda</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> <!-- End Trending Category Section -->
 
   </main>
 
   <footer id="footer" class="footer dark-background">
     <div class="container footer-top">
       <div class="row gy-4">
-  
         <!-- About Section -->
         <div class="col-lg-4 col-md-6 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
@@ -273,7 +235,7 @@
             <p><strong>Email:</strong> <span>CarBlog@gmail.com</span></p>
           </div>
         </div> <!-- End About Section -->
-  
+        
         <!-- Useful Links Section -->
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Useful Links</h4>
@@ -283,7 +245,7 @@
             <li><a href="TOS.html">Terms of Service</a></li>
           </ul>
         </div> <!-- End Useful Links Section -->
-  
+        
         <!-- Donations Section -->
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Donations</h4>
@@ -291,33 +253,32 @@
             <li><a href="donate.html">Support Us</a></li>
           </ul>
         </div> <!-- End Donations Section -->
-                                        <!-- Feedback Section -->
-                                        <div class="col-lg-2 col-md-3 footer-links">
-                                          <h4>Feedback on how to improve the website</h4>
-                                          <ul>
-                                              <li><a href="opinion.html">Feedback</a></li>
-                                          </ul>
-                                      </div> <!-- End Feedback Section -->
-                                                                              <!-- Ideas -->
-                                                                              <div class="col-lg-2 col-md-3 footer-links">
-                                                                                <h4>Give your Ideas or Suggestions</h4>
-                                                                                <ul>
-                                                                                    <li><a href="Ideas.html">Ideas on cars to review</a></li>
-                                                                                </ul>
-                                                                            </div> <!-- End Feedback Section -->
+        
+        <!-- Feedback Section -->
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Feedback on how to improve the website</h4>
+          <ul>
+              <li><a href="opinion.html">Feedback</a></li>
+          </ul>
+        </div> <!-- End Feedback Section -->
+
+        <!-- Ideas Section -->
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Give your Ideas or Suggestions</h4>
+          <ul>
+              <li><a href="Ideas.html">Ideas on cars to review</a></li>
+          </ul>
+        </div> <!-- End Ideas Section -->
+      </div>
+    </div>
 
     <div class="container copyright text-center mt-4">
       <p>© <span>Copyright</span> <strong class="px-1 sitename">CarBlog</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
         <p><a href="sitemap.html"><span style="font-size: large; color:rgb(16, 164, 167);">Sitemap</span></a></p>
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
-
   </footer>
 
   <!-- Scroll Top -->
@@ -336,5 +297,4 @@
   <script src="assets/js/main.js"></script>
 
 </body>
-
 </html>

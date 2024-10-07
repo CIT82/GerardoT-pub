@@ -2090,3 +2090,38 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 30%);
   margin: 10px 0 0 0;
 }
+
+/* Dark overlay to make the text more readable */
+#introduction {
+  position: relative;
+}
+
+#introduction .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay with transparency */
+  z-index: 1; /* Ensure overlay is above background but below text */
+}
+
+#introduction .container {
+  position: relative;
+  z-index: 2; /* Ensure text is on top of the overlay */
+  padding-top: 100px; /* Adds some space from the top */
+  padding-bottom: 100px; /* Adds space at the bottom */
+}
+
+#introduction h2 {
+  color: white; /* Ensures the main heading is white */
+  font-size: 3rem; /* Larger size for better visibility */
+}
+
+#introduction p {
+  color: rgba(255, 255, 255, 0.9); /* Slightly transparent white for paragraphs */
+  font-size: 1.1rem; /* Increased size for better readability */
+  line-height: 1.8; /* Better line spacing for text */
+  max-width: 800px; /* Limits paragraph width for better text flow */
+  margin: 0 auto; /* Centers the text */
+}

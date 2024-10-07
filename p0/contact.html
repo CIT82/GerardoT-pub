@@ -25,24 +25,87 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  
+  <!-- Custom Styles -->
+  <style>
+    /* Center the Introduction Paragraph */
+    .contact-intro {
+      text-align: center;
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+      padding: 0 20px;
+    }
 
-  <!-- =======================================================
-  * Template Name: ZenBlog
-  * Template URL: https://bootstrapmade.com/zenblog-bootstrap-blog-template/
-  * Updated: Aug 08 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+    .contact-intro p {
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      color: #444;
+    }
+
+    /* Style the Map */
+    .contact-map iframe {
+      width: 100%;
+      height: 350px;
+      border: none;
+    }
+
+    /* Styling for the Section */
+    .contact .container {
+      margin-top: 30px;
+    }
+
+    /* Form Style */
+    .contact form input, .contact form textarea {
+      width: 100%;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      margin-bottom: 15px;
+      font-size: 1rem;
+    }
+
+    .contact form button {
+      background-color: #00a3a3;
+      color: white;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1.1rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact form button:hover {
+      background-color: #008c8c;
+    }
+
+    /* Footer Styling */
+    #footer {
+      background-color: #333;
+      padding: 40px 0;
+      color: white;
+    }
+
+    #footer .footer-about h3 {
+      color: #fff;
+    }
+
+    .footer-contact p, .footer-links a {
+      color: #bbb;
+    }
+
+    .footer-links a:hover {
+      color: #00a3a3;
+    }
+  </style>
+
 </head>
 
 <body class="contact-page">
 
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container position-relative d-flex align-items-center justify-content-between">
-
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
         <h1 class="sitename">CarBlog</h1>
       </a>
 
@@ -50,11 +113,11 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="Postoftheday.html">Post of the day</a></li>
-          <li class="dropdown"><a href="category.html"><span>Categories</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li><a href="Postoftheday.html">Post of the Day</a></li>
+          <li class="dropdown">
+            <a href="category.html"><span>Categories</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="Lexus.html">Lexus</a></li>
-              </li>
               <li><a href="Toyota.html">Toyota</a></li>
               <li><a href="Honda.html">Honda</a></li>
               <li><a href="Dodge.html">Dodge</a></li>
@@ -66,7 +129,6 @@
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-
     </div>
   </header>
 
@@ -87,25 +149,34 @@
 
     <!-- Contact Section -->
     <section id="contact" class="contact section">
+      <div class="container">
+        
+        <!-- Introduction Paragraph -->
+        <div class="contact-intro">
+          <p>Welcome to our Contact Page! Here, you'll find a map of Fresno, California, where our office is located. If you have any questions, need assistance, or would like to get in touch with us, please feel free to reach out. We are here to help and look forward to connecting with you. Use the map below to find our office and learn more about how to contact us.</p>
+        </div>
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <h2 class="text-center">Map of Fresno, California</h2>
 
-        <div class="mb-4" data-aos="fade-up" data-aos-delay="200">
-          <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div><!-- End Google Maps -->
+        <!-- Google Map -->
+        <div class="contact-map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d204503.63601094438!2d-119.95936830568985!3d36.78569475571735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80945de1549e4e9d%3A0x7b12406449a3b811!2sFresno%2C%20CA!5e0!3m2!1sen!2sus!4v1728325387215!5m2!1sen!2sus" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div><!-- End Google Map -->
 
         <div class="row gy-4">
 
           <div class="col-lg-4">
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+            <!-- Address Info -->
+            <div class="info-item d-flex">
               <i class="bi bi-geo-alt flex-shrink-0"></i>
               <div>
                 <h3>Address</h3>
-                <p>A108 Adam Street, New York, NY 535022</p>
+                <p>Fresno Street, Fresno, CA 93704</p>
               </div>
             </div><!-- End Info Item -->
 
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+            <!-- Call Info -->
+            <div class="info-item d-flex">
               <i class="bi bi-telephone flex-shrink-0"></i>
               <div>
                 <h3>Call Us</h3>
@@ -113,25 +184,26 @@
               </div>
             </div><!-- End Info Item -->
 
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
+            <!-- Email Info -->
+            <div class="info-item d-flex">
               <i class="bi bi-envelope flex-shrink-0"></i>
               <div>
                 <h3>Email Us</h3>
-                <p>info@example.com</p>
+                <p>CarBlog@gmail.com</p>
               </div>
             </div><!-- End Info Item -->
-
           </div>
 
           <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+            <!-- Contact Form -->
+            <form action="forms/contact.php" method="post" class="php-email-form">
               <div class="row gy-4">
 
                 <div class="col-md-6">
                   <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
                 </div>
 
-                <div class="col-md-6 ">
+                <div class="col-md-6">
                   <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
                 </div>
 
@@ -144,23 +216,16 @@
                 </div>
 
                 <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
                   <button type="submit">Send Message</button>
                 </div>
 
               </div>
-            </form>
-          </div><!-- End Contact Form -->
-
+            </form><!-- End Contact Form -->
+          </div>
         </div>
-
       </div>
 
     </section><!-- /Contact Section -->
-
   </main>
 
   <footer id="footer" class="footer dark-background">
@@ -173,7 +238,7 @@
             <span class="sitename">CarBlog</span>
           </a>
           <div class="footer-contact pt-3">
-            <p><strong>Address:</strong> Fresno street, Fresno, CA 93704</p>
+            <p><strong>Address:</strong> Fresno Street, Fresno, CA 93704</p>
             <p><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
             <p><strong>Email:</strong> <span>CarBlog@gmail.com</span></p>
           </div>
@@ -211,25 +276,9 @@
                                                                                 </ul>
                                                                             </div> <!-- End Feedback Section -->
 
-    <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">CarBlog</strong> <span>All Rights Reserved</span></p>
-      <div class="credits">
-        <p><a href="sitemap.html"><span style="font-size: large; color:rgb(16, 164, 167);">Sitemap</span></a></p>
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div>
-
-  </footer>
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
-  <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -241,5 +290,4 @@
   <script src="assets/js/main.js"></script>
 
 </body>
-
 </html>
