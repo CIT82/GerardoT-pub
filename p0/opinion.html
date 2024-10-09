@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CarBlog</title>
-    <meta name="description" content="Your source for the latest in automotive news">
-    <meta name="keywords" content="cars, blog, automotive, news">
+    <meta name="description" content="Let us know your opinions on our car blog">
+    <meta name="keywords" content="car, blog, opinions">
 
     <!-- Favicons -->
     <link href="assets/img/favicon.png" rel="icon">
@@ -68,6 +68,20 @@
         input[type="submit"]:hover {
             background: #45a049;
         }
+
+        /* Styling for the image */
+        .feedback-image {
+            margin-bottom: 30px; /* Adds space below the image */
+            text-align: center; /* Center align the image */
+        }
+
+        .feedback-image img {
+            width: 100%; /* Make the image take full width of its container */
+            max-width: 1200px; /* Ensure it doesn't stretch too large */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 10px; /* Optional: adds rounded corners */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: adds shadow for effect */
+        }
     </style>
 </head>
 
@@ -87,7 +101,6 @@
                 <li class="dropdown"><a href="category.html"><span>Categories</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                   <ul>
                     <li><a href="Lexus.html">Lexus</a></li>
-                    </li>
                     <li><a href="Toyota.html">Toyota</a></li>
                     <li><a href="Honda.html">Honda</a></li>
                     <li><a href="Dodge.html">Dodge</a></li>
@@ -116,7 +129,15 @@
         </div><!-- End Page Title -->
 
         <section id="feedback-section" class="section">
+            <!-- Image Section -->
+            <div class="feedback-image">
+                <img src="assets/img/feedback-banner.png" alt="Feedback Banner" class="img-fluid">
+            </div>
+
             <div class="container feedback-form" data-aos="fade-up">
+                <!-- Added Introductory Paragraph -->
+                <p>At CarBlog, we continuously strive to provide the best automotive content. We value your opinion and would love to hear your feedback on how we can improve the website and the articles we provide. Your suggestions will help us refine our content and make your experience better!</p>
+
                 <h1>We Value Your Feedback!</h1>
                 <p>Please share your thoughts about our blog.</p>
                 <form action="submit_feedback.php" method="post">
@@ -167,20 +188,22 @@
                         <li><a href="donate.html">Support Us</a></li>
                     </ul>
                 </div> <!-- End Donations Section -->
-                                        <!-- Feedback Section -->
-                                        <div class="col-lg-2 col-md-3 footer-links">
-                                            <h4>Feedback on how to improve the website</h4>
-                                            <ul>
-                                                <li><a href="opinion.html">Feedback</a></li>
-                                            </ul>
-                                        </div> <!-- End Feedback Section -->
-                                                                                <!-- Ideas -->
-                                                                                <div class="col-lg-2 col-md-3 footer-links">
-                                                                                  <h4>Give your Ideas or Suggestions</h4>
-                                                                                  <ul>
-                                                                                      <li><a href="Ideas.html">Ideas on cars to review</a></li>
-                                                                                  </ul>
-                                                                              </div> <!-- End Feedback Section -->
+
+                <!-- Feedback Section -->
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Feedback on how to improve the website</h4>
+                    <ul>
+                        <li><a href="opinion.html">Feedback</a></li>
+                    </ul>
+                </div> <!-- End Feedback Section -->
+
+                <!-- Ideas -->
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Give your Ideas or Suggestions</h4>
+                    <ul>
+                        <li><a href="Ideas.html">Ideas on cars to review</a></li>
+                    </ul>
+                </div> <!-- End Feedback Section -->
 
                 <div class="container copyright text-center mt-4">
                     <p>© <span>Copyright</span> <strong class="px-1 sitename">CarBlog</strong> <span>All Rights Reserved</span></p>
@@ -208,3 +231,4 @@
 </body>
 
 </html>
+
